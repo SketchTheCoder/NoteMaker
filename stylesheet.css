@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    resize: none;
+    font-size: 20px;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-note:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+/* === Dark Mode === */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .note {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+body.dark-mode .add-note {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#dark {
+    height: 40px;
+    width: 70px;
+    border-radius: 23px;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    background-color: #f0f0f0;
+    transition: background 0.3s;
+}
+
+body.dark-mode #dark {
+    background-color: #333;
+}
+
+.Instruction {
+    height: 30px;
+    width: 50vw;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}

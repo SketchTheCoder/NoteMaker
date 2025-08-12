@@ -75,4 +75,3 @@ function deleteNote(id, element) {
   saveNotes(notes);
   notesContainer.removeChild(element);
 }
-
